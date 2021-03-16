@@ -226,6 +226,7 @@ KERNEL_TOOLCHAIN_PATH := $(KERNEL_TOOLCHAIN)/$(KERNEL_TOOLCHAIN_PREFIX)
 endif
 endif
 
+KERNEL_CROSS_COMPILE := CROSS_COMPILE="$(KERNEL_TOOLCHAIN_PATH)"
 # ifneq ($(USE_CCACHE),)
 #     # Detect if the system already has ccache installed to use instead of the prebuilt
 #     _ccache := $(shell which ccache)
